@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8475BE232C2AC0D9003BDE28 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475BE222C2AC0D9003BDE28 /* HomeViewModel.swift */; };
+		8475BE262C2AC752003BDE28 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475BE252C2AC752003BDE28 /* CardViewModel.swift */; };
+		8475BE2C2C2D950F003BDE28 /* RegistriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475BE2B2C2D950F003BDE28 /* RegistriesView.swift */; };
+		8475BE2E2C2DD4F9003BDE28 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475BE2D2C2DD4F9003BDE28 /* CarModel.swift */; };
+		84860D2E2C4D9E4B00A743FE /* DateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84860D2D2C4D9E4B00A743FE /* DateViewModel.swift */; };
+		84ABFF612C29A2CA002FB840 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABFF602C29A2CA002FB840 /* CardView.swift */; };
+		84B952B12C2599BC00F4768D /* OrexSpectexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B952B02C2599BC00F4768D /* OrexSpectexApp.swift */; };
+		84B952B32C2599BC00F4768D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B952B22C2599BC00F4768D /* HomeView.swift */; };
+		84B952B52C2599BD00F4768D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B952B42C2599BD00F4768D /* Assets.xcassets */; };
+		84B952B82C2599BD00F4768D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B952B72C2599BD00F4768D /* Preview Assets.xcassets */; };
+		84B952BF2C25A80A00F4768D /* CardProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B952BE2C25A80A00F4768D /* CardProductView.swift */; };
+		84B952D62C25F6AC00F4768D /* DetailCardProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B952D52C25F6AC00F4768D /* DetailCardProductView.swift */; };
+		84EF7A6C2C41934400500DA4 /* DetailCardProdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF7A6B2C41934400500DA4 /* DetailCardProdViewModel.swift */; };
+		84EF7A6F2C4853E800500DA4 /* ExtentionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF7A6E2C4853E800500DA4 /* ExtentionColor.swift */; };
+		84EF7A732C4D943E00500DA4 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF7A722C4D943E00500DA4 /* DateView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8475BE222C2AC0D9003BDE28 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8475BE252C2AC752003BDE28 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		8475BE2B2C2D950F003BDE28 /* RegistriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistriesView.swift; sourceTree = "<group>"; };
+		8475BE2D2C2DD4F9003BDE28 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		84860D2D2C4D9E4B00A743FE /* DateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewModel.swift; sourceTree = "<group>"; };
+		84ABFF602C29A2CA002FB840 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		84B952AD2C2599BC00F4768D /* OrexSpectex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrexSpectex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B952B02C2599BC00F4768D /* OrexSpectexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrexSpectexApp.swift; sourceTree = "<group>"; };
+		84B952B22C2599BC00F4768D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		84B952B42C2599BD00F4768D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84B952B72C2599BD00F4768D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84B952BE2C25A80A00F4768D /* CardProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProductView.swift; sourceTree = "<group>"; };
+		84B952D52C25F6AC00F4768D /* DetailCardProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCardProductView.swift; sourceTree = "<group>"; };
+		84EF7A6B2C41934400500DA4 /* DetailCardProdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCardProdViewModel.swift; sourceTree = "<group>"; };
+		84EF7A6E2C4853E800500DA4 /* ExtentionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionColor.swift; sourceTree = "<group>"; };
+		84EF7A722C4D943E00500DA4 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84B952AA2C2599BC00F4768D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8475BE242C2AC0F1003BDE28 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8475BE222C2AC0D9003BDE28 /* HomeViewModel.swift */,
+				8475BE252C2AC752003BDE28 /* CardViewModel.swift */,
+				84EF7A6B2C41934400500DA4 /* DetailCardProdViewModel.swift */,
+				84860D2D2C4D9E4B00A743FE /* DateViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84B952A42C2599BC00F4768D = {
+			isa = PBXGroup;
+			children = (
+				84B952AF2C2599BC00F4768D /* OrexSpectex */,
+				84B952AE2C2599BC00F4768D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84B952AE2C2599BC00F4768D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84B952AD2C2599BC00F4768D /* OrexSpectex.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84B952AF2C2599BC00F4768D /* OrexSpectex */ = {
+			isa = PBXGroup;
+			children = (
+				84B952B02C2599BC00F4768D /* OrexSpectexApp.swift */,
+				84B952C22C25A83B00F4768D /* Model */,
+				84B952C32C25F0DF00F4768D /* View */,
+				8475BE242C2AC0F1003BDE28 /* ViewModel */,
+				84EF7A6D2C4853A700500DA4 /* Extention */,
+				84B952B42C2599BD00F4768D /* Assets.xcassets */,
+				84B952B62C2599BD00F4768D /* Preview Content */,
+			);
+			path = OrexSpectex;
+			sourceTree = "<group>";
+		};
+		84B952B62C2599BD00F4768D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				84B952B72C2599BD00F4768D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84B952C22C25A83B00F4768D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8475BE2D2C2DD4F9003BDE28 /* CarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84B952C32C25F0DF00F4768D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8475BE2B2C2D950F003BDE28 /* RegistriesView.swift */,
+				84B952B22C2599BC00F4768D /* HomeView.swift */,
+				84ABFF602C29A2CA002FB840 /* CardView.swift */,
+				84B952D52C25F6AC00F4768D /* DetailCardProductView.swift */,
+				84EF7A722C4D943E00500DA4 /* DateView.swift */,
+				84B952D42C25F65300F4768D /* Component */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84B952D42C25F65300F4768D /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				84B952BE2C25A80A00F4768D /* CardProductView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		84EF7A6D2C4853A700500DA4 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				84EF7A6E2C4853E800500DA4 /* ExtentionColor.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84B952AC2C2599BC00F4768D /* OrexSpectex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B952BB2C2599BD00F4768D /* Build configuration list for PBXNativeTarget "OrexSpectex" */;
+			buildPhases = (
+				84B952A92C2599BC00F4768D /* Sources */,
+				84B952AA2C2599BC00F4768D /* Frameworks */,
+				84B952AB2C2599BC00F4768D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrexSpectex;
+			productName = OrexSpectex;
+			productReference = 84B952AD2C2599BC00F4768D /* OrexSpectex.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84B952A52C2599BC00F4768D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					84B952AC2C2599BC00F4768D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 84B952A82C2599BC00F4768D /* Build configuration list for PBXProject "OrexSpectex" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84B952A42C2599BC00F4768D;
+			productRefGroup = 84B952AE2C2599BC00F4768D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84B952AC2C2599BC00F4768D /* OrexSpectex */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84B952AB2C2599BC00F4768D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B952B82C2599BD00F4768D /* Preview Assets.xcassets in Resources */,
+				84B952B52C2599BD00F4768D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84B952A92C2599BC00F4768D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B952B32C2599BC00F4768D /* HomeView.swift in Sources */,
+				84860D2E2C4D9E4B00A743FE /* DateViewModel.swift in Sources */,
+				84B952D62C25F6AC00F4768D /* DetailCardProductView.swift in Sources */,
+				8475BE232C2AC0D9003BDE28 /* HomeViewModel.swift in Sources */,
+				8475BE262C2AC752003BDE28 /* CardViewModel.swift in Sources */,
+				84EF7A6C2C41934400500DA4 /* DetailCardProdViewModel.swift in Sources */,
+				8475BE2C2C2D950F003BDE28 /* RegistriesView.swift in Sources */,
+				84EF7A732C4D943E00500DA4 /* DateView.swift in Sources */,
+				84EF7A6F2C4853E800500DA4 /* ExtentionColor.swift in Sources */,
+				8475BE2E2C2DD4F9003BDE28 /* CarModel.swift in Sources */,
+				84ABFF612C29A2CA002FB840 /* CardView.swift in Sources */,
+				84B952BF2C25A80A00F4768D /* CardProductView.swift in Sources */,
+				84B952B12C2599BC00F4768D /* OrexSpectexApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84B952B92C2599BD00F4768D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84B952BA2C2599BD00F4768D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84B952BC2C2599BD00F4768D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OrexSpectex/Preview Content\"";
+				DEVELOPMENT_TEAM = CN66MVDHVX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alex.com.OrexSpectex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84B952BD2C2599BD00F4768D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OrexSpectex/Preview Content\"";
+				DEVELOPMENT_TEAM = CN66MVDHVX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alex.com.OrexSpectex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84B952A82C2599BC00F4768D /* Build configuration list for PBXProject "OrexSpectex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B952B92C2599BD00F4768D /* Debug */,
+				84B952BA2C2599BD00F4768D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B952BB2C2599BD00F4768D /* Build configuration list for PBXNativeTarget "OrexSpectex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B952BC2C2599BD00F4768D /* Debug */,
+				84B952BD2C2599BD00F4768D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84B952A52C2599BC00F4768D /* Project object */;
+}
