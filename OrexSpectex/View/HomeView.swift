@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
-
+import FirebaseAuth
 struct HomeView: View {
-    @StateObject var maimViewModel = HomeViewModel()
+    @StateObject var viewModel: HomeViewModel
+    @EnvironmentObject var contentViewModel: ContentViewModel
     @State private var coloumns = [
         GridItem(.flexible(),spacing: 0),
         GridItem(.flexible(),spacing: 0)
     ]
     @State private var isPresentMenu = false
+    @State private var isShowProfile = false
+    //@State private var user: UserModel
    // var cardProduct: CarModel
     
     var body: some View {
@@ -57,7 +60,7 @@ struct HomeView: View {
                     
                     ScrollView(.vertical) {
                         LazyVGrid(columns: coloumns, spacing: 10) {
-                            ForEach(maimViewModel.unitHome) { cars in
+                            ForEach(viewModel.unitHome) { cars in
                                 NavigationLink {
                                     let viewModel = CardViewModel(cars: cars)
                                     CardView(mainViewModel: viewModel)
@@ -126,7 +129,7 @@ struct HomeView: View {
             })
             
             Button(action: {
-                
+                isShowProfile.toggle()
             }, label: {
                 HStack {
                     Image(systemName: "person")
@@ -137,17 +140,21 @@ struct HomeView: View {
                 .padding(.leading)
                 .tint(.black)
             })
-            
+            Button("Выйти") {
+                viewModel.quit()
+            }
             Spacer()
         }
+        .onChange(of: viewModel.authorized, { oldValue, newValue in
+            if newValue == false {
+                contentViewModel.appState = .unauthorized
+            }
+        })
         .frame(width: 250)
         .frame(maxHeight: .infinity)
         .background(.orange)
+//        .fullScreenCover(isPresented: $isShowProfile, content: {
+//            ProfileView(viewModel: ProfileViewModel(profile: .init(id: "", name: "", number: 0, surname: "", company: "")))
+//        })
     }
-}
-
-
-
-#Preview {
-    HomeView()
 }

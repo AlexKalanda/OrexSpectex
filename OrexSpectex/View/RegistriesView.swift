@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RegistriesView: View {
+    @EnvironmentObject var contentViewmodel: ContentViewModel
+    @StateObject var viewModel = RegViewModel()
     @State private var isShowLogIn = true
     @State private var isShowHomeView = false
     @State private var email = ""
@@ -16,6 +18,8 @@ struct RegistriesView: View {
     @State private var password = ""
     @State private var confirmPassword = ""
     @State private var company = ""
+    @State private var isShowAlert = false
+    @State private var alertMes = ""
     var body: some View {
         VStack {
             VStack {
@@ -49,7 +53,7 @@ struct RegistriesView: View {
                         .padding(4)
                         .background(.white)
                         .clipShape(.capsule)
-                    TextField("Введите логин", text: $email)
+                    TextField("Введите email", text: $email)
                         .padding(4)
                         .background(.white)
                         .clipShape(.capsule)
@@ -66,21 +70,12 @@ struct RegistriesView: View {
                 Spacer()
                
                 Button(action: {
-                    if isShowLogIn {
-                        print("авторитизация через Firebase")
-                        isShowHomeView.toggle()
-                    } else {
-                        print("регестрация")
-                        self.email = ""
-                        self.name = ""
-                        self.surname = ""
-                        self.password = ""
-                        self.confirmPassword = ""
-                        self.company = ""
-                        isShowLogIn.toggle()
+                    switch isShowLogIn {
+                        case true:
+                        viewModel.authorization(login: email, password: password)
+                    case false:
+                        viewModel.createAccount(login: email, password: password, confirm: confirmPassword)
                     }
-                        
-                    
                 }, label: {
                     Text(isShowLogIn ? "Войти" : "Регестрация")
                         .frame(width: 200,height: 50)
@@ -89,7 +84,6 @@ struct RegistriesView: View {
                         .padding(.bottom,4)
                         .tint(.white)
                 })
-               
                     Button(action: {
                         isShowLogIn.toggle()
                     }, label: {
@@ -108,12 +102,16 @@ struct RegistriesView: View {
             .background(.orange)
             .clipShape(.rect(cornerRadius: 20))
         }
+        .onChange(of: viewModel.userId) { oldValue, newValue in
+            guard let newValue else {
+                contentViewmodel.appState = .unauthorized
+                return
+            }
+            contentViewmodel.appState = .authorized(id: newValue)
+        }
         .frame(maxWidth: .infinity,maxHeight: .infinity)
         .background(.black)
         .animation(.easeInOut, value: isShowLogIn)
-        .fullScreenCover(isPresented: $isShowHomeView, content: {
-            HomeView()
-        })
     }
 }
 

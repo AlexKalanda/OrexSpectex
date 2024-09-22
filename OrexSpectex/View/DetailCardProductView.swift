@@ -12,7 +12,7 @@ struct DetailCardProductView: View {
     
     @State private var isShowEquipment = false
     @State private var isShowDescription = false
-   // @State private var isPresentButtonEquipment: Bool
+    // @State private var isPresentButtonEquipment: Bool
     @State private var isShowDateView = false
     
     var body: some View {
@@ -80,7 +80,6 @@ struct DetailCardProductView: View {
                                     }
                                 }
                             }
-                            
                         }
                     }
                     .frame(width: 120)
@@ -116,15 +115,7 @@ struct DetailCardProductView: View {
             DateView(viewModel: .init(model: mainViewModel.model))
                 .presentationDetents([.height(600 )])
         })
-        
-        
-        
-        
-    }
-    
-    
-    
-  
+    }  
 }
 
 //#Preview {
